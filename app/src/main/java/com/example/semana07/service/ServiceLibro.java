@@ -1,5 +1,6 @@
 package com.example.semana07.service;
 
+import com.example.semana07.entity.Categoria;
 import com.example.semana07.entity.Libro;
 
 import java.util.List;
@@ -25,6 +26,10 @@ public interface ServiceLibro {
 
     @PUT("servicio/libro")
     public Call<Libro> actualizaLibro(@Body Libro obj);
+
+    //SEM12- CRUD
+    @GET("servicio/util/listaCategoriaDeLibro")
+    public Call<List<Categoria>> listaTodos();
 
 
 }

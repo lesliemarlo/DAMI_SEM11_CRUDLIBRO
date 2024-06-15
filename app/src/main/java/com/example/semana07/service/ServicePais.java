@@ -10,6 +10,9 @@ import retrofit2.http.GET;
 
 public interface ServicePais {
 
+
+
+    //sem12 - crud
     @GET("servicio/util/listaPais")
     public Call<List<Pais>> listaTodos();
 

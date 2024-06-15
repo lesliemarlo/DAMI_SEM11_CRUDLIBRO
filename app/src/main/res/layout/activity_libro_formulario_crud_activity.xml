@@ -100,6 +100,29 @@
             android:padding="3dp"
             android:minHeight="48dp"
             />
+<!--radio button-->
+        <TextView
+            android:id="@+id/txtEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:padding="3dp"
+            android:text="Estado" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/rbtActivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Activo"/>
+            <RadioButton android:id="@+id/rbtInactivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inactivo"/>
+        </RadioGroup>
 
         <Button
             android:id="@+id/btnRegLibEnviar"
